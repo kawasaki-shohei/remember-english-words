@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @row.word %>
+</p>
+
+<p>
+  <strong>Jpn:</strong>
+  <%= @row.jpn %>
+</p>
+
+<p>
+  <strong>Sentense:</strong>
+  <%= @row.sentense %>
+</p>
+
+<p>
+  <strong>Page:</strong>
+  <%= @row.page %>
+</p>
+
+<%= link_to 'Edit', edit_row_path(@row) %> |
+<%= link_to 'Back', rows_path %>
