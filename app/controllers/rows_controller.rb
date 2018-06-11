@@ -5,7 +5,7 @@ class RowsController < ApplicationController
   # GET /rows.json
   def index
     @page = Page.find(params[:page_id])
-    @rows = @page.rows
+    @rows = @page.rows.order(created_at: :desc)
   end
 
   # GET /rows/1
